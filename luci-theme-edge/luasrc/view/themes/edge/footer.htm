@@ -1,0 +1,17 @@
+<% local ver = require "luci.version" %>
+	</div>
+	<footer class="mobile-hide">
+	<a href="https://i.ssss.fun">Powered by <%= ver.luciname %> (<%= ver.luciversion %>)</a> / <%= ver.distversion %>
+	<ul class="breadcrumb pull-right" id="modemenu" style="display:none"></ul>
+	</footer>
+	</div>
+</div>
+<script>
+	var luciLocation = <%= luci.http.write_json(luci.dispatcher.context.path) %>;
+</script>
+<script src="<%=media%>/js/script.js?v=2.1"></script>
+<script src="<%=media%>/js/waves.js"></script>
+     
+</body>
+</html>
+
