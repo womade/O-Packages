@@ -12,8 +12,8 @@ on:
       - '.github/workflows/upstream.yml'
       - '.gitignore'
       - 'diy/**'
-  schedule:
-    - cron: 0 */12 * * *
+#   schedule:
+#     - cron: 0 */12 * * *
   workflow_dispatch:
   watch:
     types: started
